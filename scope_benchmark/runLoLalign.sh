@@ -5,4 +5,4 @@
 ./bench.awk ../data/scop_lookup.fix.tsv <(cat ../alignResults/rawoutput/lolalignaln.tsv) > ../alignResults/rocx/lolalign.rocx
 
 ## calculate auc
- awk '{ famsum+=$3; supfamsum+=$4; foldsum+=$5}END{print famsum/NR,supfamsum/NR,foldsum/NR}' ../alignResults/rocx/olalignaln.rocx
+ awk '{ famsum+=$3; supfamsum+=$4; foldsum+=$5}END{print famsum/NR,supfamsum/NR,foldsum/NR}' ../alignResults/rocx/lolalign.rocx
